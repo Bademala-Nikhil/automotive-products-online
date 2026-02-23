@@ -24,12 +24,12 @@ export default function BestSellingSection() {
       <div className="relative">
 
         {/* CARDS */}
-        <div className="flex gap-6 overflow-x-auto pb-4 scrollbar-hide">
+         <div className="flex lg:grid lg:grid-cols-4 gap-6 overflow-x-auto lg:overflow-visible pb-4 scrollbar-hide">
 
           {products.map((img, index) => (
             <div
               key={index}
-              className="min-w-[280px] md:min-w-[300px] bg-white border rounded-xl p-4 h-[360px] md:h-[410px] flex flex-col justify-between hover:shadow-lg transition"
+              className="min-w-[280px] md:min-w-[300px] lg:min-w-0 bg-white border rounded-xl p-4 h-[360px] md:h-[410px] flex flex-col justify-between hover:shadow-lg transition"
             >
               {/* IMAGE */}
               <div className="flex justify-center">
